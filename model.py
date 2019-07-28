@@ -37,6 +37,7 @@ class TransformationNetwork(nn.Module):
             nn.InstanceNorm2d(32),
             nn.ReLU(),
             ConvLayer(32, 3, 9, 1),
+            nn.Tanh()
 
         )
 

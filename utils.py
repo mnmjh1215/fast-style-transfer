@@ -24,9 +24,3 @@ def gram_matrix(tensor):
     gram = torch.bmm(features, features.transpose(1, 2)) / (channels * h * w)
     return gram
 
-
-def normalize_generated_image(tensor):
-    tensor = tensor / 255.0
-    mean = tensor.new_tensor([0.485, 0.456, 0.406]).view(-1, 1, 1)
-    std = tensor.new_tensor([0.229, 0.224, 0.225]).view(-1, 1, 1)
-    return (tensor - mean) / std

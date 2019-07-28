@@ -65,7 +65,6 @@ class Trainer:
 
         batch_size = train_images.shape[0]
         out_images = self.network(train_images)
-        out_images = normalize_generated_image(out_images)
         content_features = self.feature_extractor(train_images)
         out_features = self.feature_extractor(out_images)
 
