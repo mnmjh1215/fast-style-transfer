@@ -1,10 +1,9 @@
-from utils import gram_matrix
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import time
-from utils import normalize_generated_image
 
+from utils import *
 from config import Config
 
 
