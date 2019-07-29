@@ -35,3 +35,4 @@ training...
 ### Future works
 
 1. Support multiple style image. Current version only allows one style image.
+2. Add total variation regularizer
