@@ -57,6 +57,16 @@ def get_args():
                         default=Config.batch_size,
                         help='batch size')
 
+    parser.add_argument('--style_weight',
+                        type=float,
+                        default=Config.style_weight,
+                        help='weight value to be multiplied to style loss')
+
+    parser.add_argument('--content_weight',
+                        type=float,
+                        default=Config.content_weight,
+                        help='weight value to be multiplied to content loss')
+
     args = parser.parse_args()
 
     return args
