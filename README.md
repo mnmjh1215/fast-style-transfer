@@ -29,8 +29,14 @@ python main.py --test --model_path [model file path] --test_image_path [test ima
 
 ### Result
 
-training...
+trained with following setting
+```
+--num_epochs 100 --lr 0.001 --batch_size 16 --style_weight 3e11 --content_weight 1e5
+```
 
+|   |![content_1](./images/content/472.jpg)|![content_2](./images/content/476.jpg)|
+|---|---|---|
+|![style](./images/style/mosaic.jpg)|![result_1](./images/generated/472.jpg)|![result_2](./images/generated/476.jpg)   |
 
 ### Future works
 
